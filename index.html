@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friendsgiving</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="parallax">
+        <div class="dynamic-text-container">
+            <h1>Friendsgiving</h1>
+            <h1>2019</h1>
+        </div>
+    </div>
+    <div class="section-container relative">
+        <span class="sizzle first">sizzle</span>
+        <span class="sizzle second">sizzle</span>
+        <span class="sizzle third">sizzle</span>
+        <div class="center fixed-height relative">
+            <img id="turkey" src="./images/turkey.png" />
+            <img class="getTheFuckOut" id="steak" src="images/steak.png" />
+        </div>
+        <h2 id="target">You are cordially invited to a festive steak thanksgiving</h2>
+        <div class="center">
+            <img class="downArrow" src="./images/down-arrow.png" />
+        </div>
+    </div>
+    <div class="section-container hidden smallerPaddingTop">
+        <div class="center">
+            <img src="./images/calendar.png" />
+        </div>
+        <h2 class="moreSpace" id="target2">When is it?</h2>
+        <h2 class="moreSpace">Beats the fuck out of me.</h2>
+        <h2 class="moreSpace">Select yourself <br>(Honor system... Connor)</h2>
+        <div class="people-container">
+            <div data="Connor" class="person-container">
+                <img data="Connor" src="./images/connor.PNG" alt="">
+            </div>
+            <div data="Jordan" class="person-container">
+                <img data="Jordan" src="./images/jordan.PNG" alt="">
+            </div>
+            <div data="Astrid" class="person-container">
+                <img data="Astrid" src="./images/astrid.PNG" alt="">
+            </div>
+        </div>
+        <h2>Select all available dates <span id="stickNameHere"></span></h2>
+        <h3 id="error" style="color: red"></h3>
+
+        <div class="date-container">
+            <div class="block">
+                <div shoulddelete = 'false' data="1" class="date">
+                    <p shoulddelete = 'false' data="1">Thursday</p>
+                </div>
+                <div class="userBubbles" id="userTarget1"></div>
+            </div>
+            <div class="block">
+                <div shoulddelete = 'false' class="date">
+                    <p shoulddelete = 'false' data="2">Friday</p>
+                </div>
+                <div class="userBubbles" id="userTarget2"></div>
+            </div>
+            <div class="block">
+                <div shoulddelete = 'false' class="date">
+                    <p shoulddelete = 'false' data="3">Saturday</p>
+                </div>
+                <div class="userBubbles" id="userTarget3"></div>
+            </div>
+            <div class="block">
+                <div shoulddelete = 'false' class="date">
+                    <p shoulddelete = 'false' data="4">Sunday</p>
+                </div>
+                <div class="userBubbles" id="userTarget4"></div>
+            </div>
+            <div class="block">
+                <div shoulddelete = 'false' class="date">
+                    <p shoulddelete = 'false' data="5" style="min-width: 225px; text-align:center">I'm a bummer and I can't make it</p>
+                </div>
+                <div class="userBubbles" id="userTarget5"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

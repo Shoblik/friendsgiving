@@ -1,0 +1,144 @@
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 100;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/fall_leaves.jpg');
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative ;
+}
+.dynamic-text-container {
+    position: absolute;
+    top: 65%;
+    font-size: 25px;
+    letter-spacing: 12px;
+    margin-left: 8px;
+    opacity: .8;
+    font-weight: 800;
+}
+.dynamic-text-container h1 {
+    opacity: 0;
+    transform: translateY(80%);
+    transition: .5s;
+    will-change: transform, opacity;
+    font-weight: bold;
+}
+.section-container {
+    padding: 110px 16px 0 16px;
+}
+.center {
+    text-align: center;
+}
+.fixed-height {
+    min-height: 259px;
+}
+h2 {
+    font-size: 32px;
+    margin: 18px 0;
+}
+#steak, #turkey {
+    transition: 1.2s;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+}
+.getTheFuckOut {
+    display: block;
+    transform: translateX(-150%) translateX(-50%) rotate(-360deg) !important;
+}
+#steak {
+    margin: auto;
+}
+.relative {
+    position: relative;
+}
+span.sizzle {
+    position: absolute;
+    top: 0;
+    font-size: 23px;
+    display: none;
+}
+span.sizzle.first {
+    top: 100px;
+    left: 55px;
+}
+span.sizzle.second {
+    top: 66px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+span.sizzle.third {
+    top: 100px;
+    right: 15%;
+}
+.downArrow {
+    opacity: 0;
+    margin-top: 55px;
+    transition: 1s;
+    padding-bottom: 50px;
+}
+.noPaddingTop {
+    padding-top: 0;
+}
+.section-container.hidden {
+    display: none;
+}
+.person-container {
+    margin: 20px 0;
+    border-radius: 3px;
+}
+.person-container img {
+    width: 100%;
+    box-sizing: border-box;
+}
+.date p {
+    padding: 10px 15px;
+    font-size: 22px;
+    border: 2px solid #dd7703;
+    display: inline-block;
+    width: 100px;
+    border-radius: 3px;
+    user-select: none;
+}
+.date-container img {
+    width: 45px;
+    border-radius: 50%;
+}
+.block {
+    margin: 12px 0;
+}
+.block div {
+    display: inline-block;
+    top: 0;
+    vertical-align: top;
+    /* margin: 10px 0; */
+}
+.smallerPaddingTop {
+    padding-top: 10px;
+}
+h2#target2 {
+    margin-top: 60px;
+}
+.moreSpace {
+    padding-bottom: 60px;
+    font-size: 2rem;
+}
+span#stickNameHere {
+    color: #e38e37;
+}
