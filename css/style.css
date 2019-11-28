@@ -142,3 +142,17 @@ h2#target2 {
 span#stickNameHere {
     color: #e38e37;
 }
+div[data=Connor] img,
+div[data=Jordan] img,
+#Connor1,
+#Connor2,
+#Connor3,
+#Connor4,
+#Connor5,
+#Jordan1,
+#Jordan2,
+#Jordan3,
+#Jordan4,
+#Jordan5{
+    filter: invert(1);
+}
