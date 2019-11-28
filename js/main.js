@@ -89,7 +89,7 @@ let portfolio = {
     },
     getAllUserAvailability: function() {
         $.ajax({
-            url: '../server/actions/getAllUserAvailability.php',
+            url: '../friendsgiving/server/actions/getAllUserAvailability.php',
             dataType: 'JSON',
             type: 'GET',
             success: function(response) {
@@ -124,7 +124,7 @@ let portfolio = {
         $('.date p').attr('shoulddelete', false).css('border-color', '#dd7703');
 
         $.ajax({
-            url: '../server/actions/getUserAvailability.php',
+            url: '../friendsgiving/server/actions/getUserAvailability.php',
             dataType: 'JSON',
             type: 'POST',
             data: {
@@ -157,7 +157,7 @@ let portfolio = {
         $('#error').text('');
         if (target.attr('shoulddelete') && target.attr('shoulddelete') != "false") {
             $.ajax({
-                url: '../server/actions/removeDate.php',
+                url: '../friendsgiving/server/actions/removeDate.php',
                 dataType: 'JSON',
                 type: 'POST',
                 data: {
@@ -174,7 +174,7 @@ let portfolio = {
             })
         } else {
             $.ajax({
-                url: '../server/actions/addDate.php',
+                url: '../friendsgiving/server/actions/addDate.php',
                 dataType: 'JSON',
                 type: 'POST',
                 data: {
